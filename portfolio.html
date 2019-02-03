@@ -1,93 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+     <!-- Responsive meta tag -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio</title>
-    <!-- Responsive meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <!-- My css sheet relative pathway -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navcolor">
-        <div class="name navleft">
-            <span>Tori Fafrak</span>
-        </div>
-        <div class="navright">
-            <a class="menu" href="index.html"> About</a>
-            <span class="menu">|</span>
-            <a class="menu" href="portfolio.html">Portfolio</a>
-            <span class="menu">|</span>
-            <a class="menu" href="contact.html">Contact </a>
-        </div>
-    </nav>
-
-    <!-- Main container of page content -->
-    <div class="container">
-        <div class="row">
-            <div class="container col-md-8 main-section">
-                <h1 class="nav-left borderpatrol">Portfolio</h1>
-                <div class="container">
-                    <div class="row rowspacing">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 15rem;">
-                                <img src="assets/images/RandomPic1.jpeg" class="card-img-top" alt="Random_pic_1">
-                                <div class="card-body cardtext">
-                                    <h5 class="card-title">Project 1</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 15rem;">
-                                <img src="assets/images/randompic2.jpeg" class="card-img-top" alt="Random_pic_2">
-                                <div class="card-body cardtext">
-                                    <h5 class="card-title">Project 2</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row rowspacing">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 15rem;">
-                                <img src="assets/images/randompic3.jpeg" class="card-img-top" alt="Random_pic_3">
-                                <div class="card-body cardtext">
-                                    <h5 class="card-title">Project 3</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card" style="width: 15rem;">
-                                <img src="assets/images/randompic4.jpeg" class="card-img-top" alt="Random_pic_4">
-                                <div class="card-body cardtext">
-                                    <h5 class="card-title">Project 4</h5>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row rowspacing">
-                        <div class="col-md-6">
-                            <div class="card" style="width: 15rem;">
-                                <img src="assets/images/randompic5.jpeg" class="card-img-top" alt="Random_pic_5">
-                                <div class="card-body cardtext">
-                                    <h5 class="card-title">Project 5</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6"></div>
-
-                    </div>
-                </div>
+    <!--     Top ribbon of the page      -->
+    <header class="top-section">
+        <nav>
+            <div class="navleft">
+                <span class="name">Victoria (Tori) Fafrak</span>
             </div>
-            <div class="col-md-4"></div>
+            <div class="navright">
+                <a class="menu" href="index.html"> About</a>
+                <a class="menu2">|</a>
+                <a class="menu" href="portfolio.html">Portfolio</a>
+                <a class="menu2">|</a>
+                <a class="menu" href="contact.html">Contact </a>
+            </div>
+        </nav>
+    </header>
+    <!--    Beginning of the main content of the page   -->
+
+    <!-- This is my weakest part of the hw. I struggled positioning these items the most. 
+        I need to continue to work more on the 'overflow' and 'clearfix' concepts. -->
+
+    <div class="portfolio-section">
+        <div class="borderpatrol">
+            <h1>Portfolio</h1>
+        </div>
+        <div class="float">
+            <a class="absolute" href="#">Hangman</a>
+            <img src="assets/images/RandomPic1.jpeg" alt="Random pic 1">
+        </div>
+        <div class="float">
+            <a class="absolute" href="#">RPG Game</a>
+            <img src="assets/images/randompic2.jpeg" alt="Random_pic_2">
+        </div>
+        <div class="float">
+            <a class="absolute" href="#">Trivia Game</a>
+            <img src="assets/images/randompic3.jpeg" alt="Random_pic_3">
+        </div>
+        <div class="float">
+            <a class="absolute" href="#">Rutger Info Widget</a>
+            <img src="assets/images/randompic4.jpeg" alt="Random_pic_4">
+        </div>
+        <div class="float">
+            <a class="absolute" href="#">Rock Paper Scissors</a>
+            <img src="assets/images/randompic5.jpeg" alt="Random_pic_5">
         </div>
     </div>
 
@@ -95,13 +60,6 @@
         Copyright ©
     </footer>
 
-    <!-- Javascript links -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Contact</title>
-    <!-- Responsive meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <!-- My css sheet relative pathway -->
+    <meta charset="utf-8" />
+     <!-- Responsive meta tag -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Page</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navcolor">
-        <div class="name navleft">
-            <span>Tori Fafrak</span>
-        </div>
-        <div class="navright">
-            <a class="menu" href="index.html"> About</a>
-            <span class="menu">|</span>
-            <a class="menu" href="portfolio.html">Portfolio</a>
-            <span class="menu">|</span>
-            <a class="menu" href="contact.html">Contact </a>
-        </div>
-    </nav>
-
-    <!-- Main container of page content -->
-    <div class="container">
-        <div class="row">
-            <div class="container col-md-8 main-section">
-                <h1 class="borderpatrol">Contact Form</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Name</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Enter Name"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Leave a message!"></textarea>
-                    </div>
-                    <button type="submit" class="btn btndetail">Submit</button>
-                </form>
+    <!--     Top ribbon of the page      -->
+    <header class="top-section">
+        <nav>
+            <div class="navleft">
+                <span class="name">Victoria (Tori) Fafrak</span>
             </div>
-            <div class="col-md-4"></div>
+            <div class="navright">
+                <a class="menu" href="index.html"> About</a>
+                <a class="menu2">|</a>
+                <a class="menu" href="portfolio.html">Portfolio</a>
+                <a class="menu2">|</a>
+                <a class="menu" href="contact.html">Contact </a>
+            </div>
+        </nav>
+    </header>
+    <!--    Beginning of the main content of the page   -->
+    <div class="contact-section">
+        <div class="borderpatrol">
+            <h1>Contact</h1>
         </div>
+        <form>
+            Name:
+            <br>
+            <input class="formspec1" type="text" name="name" value="John Doe">
+            <br>
+            Email:
+            <br>
+            <input class="formspec1" type="email" name="email" value="youremail@gmail.com">
+            <br>
+            Message:
+            <br>
+            <textarea class="formspec2">Please add your message here!</textarea>
+            <br>
+            <button class="formsubmit" type="submit">Submit</button>
+        </form>
     </div>
+
     <footer>
         Copyright ©
     </footer>
 
-    <!-- Javascript links -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
