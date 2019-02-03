@@ -1,0 +1,117 @@
+/* these styles will default for screens above 768px
+(the 980px requirement)*/
+body{
+    background-image: url("../images/white-waves.png");
+    background-image: repeat;
+}
+p {
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 150%;
+}
+
+.profile-pic{
+    margin-right: 1rem;
+}
+.main-section{
+    background: #ffffff;
+    border: 0.1rem solid #dddddd; 
+    margin-top: 1rem;
+    margin-bottom: 15rem;
+}
+.name{
+    background-color:#4aaaa5;
+    border-color: #cccccc;
+    color: #ffffff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    height: 3rem;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: .3rem;
+}
+.menu{
+    color: #777777;
+    margin-left: 1rem;
+}
+footer{
+    background-color:#666666;
+    border-top: 0.5em solid #4aaaa5;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    height: 4rem;
+    padding-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h5{
+    text-align: center;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color:#4aaaa5;
+}
+h1{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1 rem;
+}
+.cardtext{
+    background-color:#4aaaa5;
+}
+.navcolor{
+    background: #ffffff;
+}
+.rowspacing{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.btndetail{
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #ffffff;
+    line-height: 150%;
+    background: #4aaaa5;
+    margin-bottom: 0.5rem;
+}
+.borderpatrol{
+    border-bottom: solid 0.1rem lightgray;
+}
+
+.navright{
+    float:right;
+}
+.navleft{
+    float: left;
+}
+
+/* I struggled with the media queries and formatting.
+so I tried to at least focus on making the navigation bar work
+and take over 100% of the screen width */
+
+/* for screens less than 768px */
+@media screen and (max-width: 768px) {
+    .name {
+      width: 100%;
+    }
+    .navright{
+        width: 100%;
+    }
+    .menu{
+        margin-left: 5rem;
+    }
+  }
+/* for screens less than 640px */
+@media screen and (max-width: 640px) {
+    .name{
+      width: 100%;
+    }
+    .navright{
+        width: 100%;
+    }
+    .menu{
+        margin-left: 3rem;
+    }
+  }
